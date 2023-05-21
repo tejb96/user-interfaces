@@ -1,0 +1,44 @@
+@startuml
+
+class MonthGUI {
+  - inputField: JTextField
+  - display: JTextArea
+  --
+  + MonthGUI(title: String)
+  + actionPerformed(ae: ActionEvent): void
+  + main(args: String[]): void
+}
+
+class Days {
+  + howManyDaysInMonth(month: int): int
+}
+
+class JFrame {
+  // Properties and methods of JFrame class
+}
+
+class JLabel {
+  // Properties and methods of JLabel class
+}
+
+class JTextField {
+  // Properties and methods of JTextField class
+}
+
+class JTextArea {
+  // Properties and methods of JTextArea class
+}
+
+class DaysTester {
+  + main(args: String[]): void
+}
+
+MonthGUI --> ActionListener : uses
+MonthGUI --> JFrame : uses
+MonthGUI --> JLabel : uses
+MonthGUI --> JTextField : uses
+MonthGUI --> JTextArea : uses
+MonthGUI --> Days : uses
+DaysTester --> Days : uses
+
+@enduml

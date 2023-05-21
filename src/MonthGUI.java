@@ -32,9 +32,11 @@ public class MonthGUI implements ActionListener{
 	public void actionPerformed(ActionEvent ae)  { 
 		if ( ae.getSource() == inputField) { 
 			//TODO: convert user input to an integer
-			
+			 int number = Integer.parseInt( inputField.getText() );
 			
 			//TODO: update display with number chosen and days calculated
+			 display.setText("There are " + Days.howManyDaysInMonth(number)
+	         +" days");
 		}
 	}
 	
