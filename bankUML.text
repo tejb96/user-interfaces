@@ -1,0 +1,37 @@
+@startuml
+
+class BankCD {
+  - principal: double
+  - rate: double
+  - years: double
+  --
+  + BankCD(principal: double, rate: double, years: double)
+  + calcYearly(): double
+  + calcDaily(): double
+}
+
+class BankCDApp {
+  - bank: BankCD
+  - cli: InteractiveCLI
+  - currencyFormat: NumberFormat
+  - percentFormat: NumberFormat
+  --
+  + BankCDApp()
+  + run(): void
+  + main(args: String[]): void
+}
+
+class InteractiveCLI {
+  - reader: Scanner
+  --
+  + InteractiveCLI()
+  + getKeyboardInteger(): int
+  + getKeyboardDouble(): double
+  + prompt(s: String): void
+  + display(s: String): void
+}
+
+BankCDApp --> BankCD : uses
+BankCDApp --> InteractiveCLI : uses
+
+@enduml

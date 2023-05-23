@@ -1,9 +1,9 @@
 
 /**
  * 
- * TODO: add JavaDoc
+ * Returns the number of days in the month selected
  * 
- * @author 
+ * @author Tejpreet Bal
  *
  */
 public final class Days {
