@@ -1,10 +1,11 @@
 
 /**
  * A class to test the Days class.
+
  * 
  * Runs through all the months 1 - 12 and prints the number of days.
  * 
- * @author 
+ * @author Tejpreet Bal
  *
  */
 import java.time.Month;
