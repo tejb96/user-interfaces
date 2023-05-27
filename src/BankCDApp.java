@@ -1,8 +1,8 @@
 /**
- * Class representing command-line interface to compute 
+ * Class representing command-line interface to compute
  * yearly and daily compounded certificate of deposit.
  *  
- * @author Tejpreet Bal
+ * @author
  *
  */
 import java.text.NumberFormat;
